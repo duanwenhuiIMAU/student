@@ -5,8 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:student"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="学生管理系统" Height="450" Width="800" Background="White" Icon="logo (2).png">
+    <Viewbox Stretch="Fill">
+        <Grid Margin="0,0,3.333,-0.333" Height="421" VerticalAlignment="Top">
+            <TextBox Name ="TextBox_output" Height="246.443" Margin="10,10,10,0" TextWrapping="Wrap" Text="输出" VerticalAlignment="Top" TextAlignment="Justify" IsReadOnly="True"/>
+            <TextBox Name="TextBox_input" Height="79.557" Margin="10,261.443,10,0" TextWrapping="Wrap" Text="输入" VerticalAlignment="Top"  />
+            <Canvas HorizontalAlignment="Left" Height="65" Margin="19.292,346,0,0" VerticalAlignment="Top" Width="760.708">
+                <Viewbox Height="47.893" Canvas.Left="50" Canvas.Top="7.107" Width="95">
+                    <Button Name ="Button_input" Content="input" Click="Button_input_Click" Height="30" Width="55"/>
+                </Viewbox>
+                <Viewbox Height="47.893" Canvas.Left="220" Canvas.Top="7.107" Width="95">
+                    <Button Name ="Button_delete" Content="delete" Click="Button_delete_Click" Height="30" Width="55" />
+                </Viewbox>
+                <Viewbox Height="47.893" Canvas.Left="400" Canvas.Top="7.107" Width="95">
+                    <Button Name ="Button_rewirte" Content="rewirte" Click="Button_rewirte_Click" Height="30" Width="55"/>
+                </Viewbox>
+                <Viewbox Height="47.893" Canvas.Left="570" Canvas.Top="7.107" Width="95">
+                    <Button Name ="Button_visit" Content="visit" Click="Button_visit_Click" Height="30" Width="55"/>
+                </Viewbox>
+            </Canvas>
+        </Grid>
+    </Viewbox>
 </Window>
